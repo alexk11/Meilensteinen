@@ -1,0 +1,35 @@
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-12">
+      <app-order-status-customer></app-order-status-customer>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+        <mat-tab-group animationDuration="0ms">
+          <mat-tab label="Auftragsstatus">
+            <app-order-status-milestones></app-order-status-milestones>
+          </mat-tab>
+          <mat-tab label="Ansprechpartner Kunde">
+            <app-order-status-contact-person-customer></app-order-status-contact-person-customer>
+          </mat-tab>
+          <mat-tab label="Ansprechpartner Telekom">
+            <app-order-status-contact-person-telekom></app-order-status-contact-person-telekom>
+          </mat-tab>
+          <mat-tab label="Zusatzinformationen">
+            <app-order-status-additional-information></app-order-status-additional-information>
+          </mat-tab>
+          <mat-tab label="Dokumente">
+            <app-order-status-documents></app-order-status-documents>
+          </mat-tab>
+        </mat-tab-group>
+    </div>
+  </div>
+    <p></p>
+    <div class="text-right">
+        <button class="btn btn-primary" (click)="goBack()">Zurück</button>
+    </div>
+</div>
+
+

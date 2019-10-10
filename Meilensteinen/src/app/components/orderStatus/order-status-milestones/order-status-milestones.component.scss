@@ -1,0 +1,24 @@
+@import '../../../../assets/custom_variables';
+//@import '../order-status-milestones/order-status-milestones.component';
+
+.mat-header-cell {
+  color: $primary;
+  font-size: large;
+  font-weight: bold;
+}
+
+.mat-column-ball {
+  flex: 0 0 10% !important;
+}
+
+.mat-column-stepName {
+  flex: 0 0 35% !important;
+}
+
+.mat-column-dueDate {
+  flex: 0 0 20% !important;
+}
+
+.mat-column-comment {
+  flex: 0 0 35% !important;
+}

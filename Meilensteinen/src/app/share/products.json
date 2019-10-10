@@ -1,0 +1,26 @@
+[
+  {
+    "productId": "656565",
+    "productName": "DCIP50"
+  },
+  {
+    "productId": "474747",
+    "productName": "DCIP100"
+  },
+  {
+    "productId": 1,
+    "productName": "DeutschlandLAN Connect IP 100 Erstanbindung"
+  },
+  {
+    "productId": 2,
+    "productName": "DeutschlandLAN Connect IP 50 Zweitanbindung"
+  },
+  {
+    "productId": 10,
+    "productName": "DeutschlandLAN Connect IP 1000 Erstanbindung"
+  },
+  {
+    "productId": 20,
+    "productName": "DeutschlandLAN Connect IP 500 Zweitanbindung"
+  }
+]

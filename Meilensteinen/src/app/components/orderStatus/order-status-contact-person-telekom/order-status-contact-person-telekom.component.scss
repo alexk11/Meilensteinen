@@ -1,0 +1,70 @@
+@import '../../../../assets/custom_variables';
+
+@media screen and (max-width: 1200px) {
+  .mat-table {
+    border: 0;
+    vertical-align: middle;
+  }
+
+  .mat-table caption {
+    font-size: 1em;
+  }
+
+  .mat-table .mat-header-cell {
+    border: 0.6250em solid;
+    clip: rect(0 0 0 0);
+    height: 0.06250em;
+    margin: -0.06250em;
+    position: absolute;
+    width: 0.06250em;
+  }
+
+  .mat-table .mat-row {
+    border-bottom: 0.3125em solid $telekom-grau-6;
+    display: block;
+  }
+  /*
+  .mat-table .mat-row:nth-child(even) {background: #CCC}
+  .mat-table .mat-row:nth-child(odd) {background: #FFF}
+  */
+  .mat-table .mat-cell {
+    border-bottom: 0.06250em solid $telekom-grau-6;
+    display: block;
+    font-size: 1em;
+    text-align: right;
+    font-weight: normal;
+    min-height: 1.875em;
+    padding-left: 0.5em;
+    padding-right: 0.5em !important;
+  }
+  .mat-table .mat-cell:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .85em;
+    color: $primary;
+  }
+  .mat-table .mat-cell:last-child {
+    border-bottom: 0;
+  }
+  .mat-table .mat-cell:first-child {
+    // padding-left: 1em;
+    padding-top: 1em;
+  }
+}
+
+.mat-header-cell {
+  color: $primary;
+  font-size: large;
+  font-weight: bold;
+}
+
+//.mat-header-cell {
+//  font-weight: bold;
+//  color: $telekom-black;
+//}

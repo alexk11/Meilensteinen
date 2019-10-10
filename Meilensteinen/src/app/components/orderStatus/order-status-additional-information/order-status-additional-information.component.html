@@ -1,0 +1,36 @@
+<div>
+  <mat-table [dataSource]="dataSource" multiTemplateDataRows [hidden]="isDataSourceEmpty()" class="mat-elevation-z8">
+    <!-- Zusatzinformation Column -->
+    <ng-container matColumnDef="label">
+      <mat-header-cell style="width: 30%" *matHeaderCellDef>Zusatzinformation</mat-header-cell>
+      <mat-cell [matTooltip]="checkNeedToolTip(element.label,100) ? getToolTipLabelData(element.label) : null"
+                [matTooltipPosition]="position.value" *matCellDef="let element"
+                data-label="Zusatzinformation"> {{element.label | truncate:100}} </mat-cell>
+    </ng-container>
+
+    <!-- Wert Column -->
+    <ng-container matColumnDef="value">
+      <mat-header-cell style="width: 30%" *matHeaderCellDef>Wert</mat-header-cell>
+      <mat-cell [matTooltip]="checkNeedToolTip(element.value,100) ? getToolTipValueData(element.value) : null"
+                [matTooltipPosition]="position.value"
+                *matCellDef="let element" data-label="Wert"> {{element.value | truncate:100 }} </mat-cell>
+    </ng-container>
+
+    <!-- Bemerkung Column -->
+    <ng-container matColumnDef="hint">
+      <mat-header-cell style="width: 30%" *matHeaderCellDef>Bemerkung</mat-header-cell>
+      <mat-cell [matTooltip]="checkNeedToolTip(element.hint,2000) ? getToolTipHintData(element.hint) : null"
+                [matTooltipPosition]="position.value" *matCellDef="let element"
+                data-label="Bemerkung"> {{element.hint | truncate:2000}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
+
+<div class="container" id="empty" [hidden]="!isDataSourceEmpty()">
+  <div class="row justify-content-center">
+    <h5>kein Eintrag.</h5>
+  </div>
+</div>

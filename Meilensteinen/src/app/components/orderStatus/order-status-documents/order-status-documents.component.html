@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let document of documentList" class="col-xm-6 col-sm-3 col-lg-2 m-3">
+      <div class="row">
+        <div class="col-4 p-0">
+          <div class="card border-0">
+            <a href="{{document.link}}"><img src='assets/images/{{document.type}}.png' class="card-img-top" alt=""/></a>
+          </div>
+        </div>
+        <div class="col-8 p-0">
+          <div class="card border-0">
+            <p class="text-left">{{document.title}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
