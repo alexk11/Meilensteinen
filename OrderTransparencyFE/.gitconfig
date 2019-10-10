@@ -1,0 +1,3 @@
+# Sia Proxy
+[http]
+  proxy = http://HE112113.emea1.cds.t-internal.com:8080/

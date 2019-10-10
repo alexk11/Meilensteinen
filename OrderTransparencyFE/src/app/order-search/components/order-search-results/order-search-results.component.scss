@@ -1,0 +1,17 @@
+@import '../../../../assets/custom_variables';
+
+.mat-form-field {
+  font-size: 15px;
+  width: 100%;
+}
+
+.row-hover:hover {
+  background-color: $telekom-grau-1;
+  cursor: pointer;
+}
+
+//th.mat-header-cell {
+//  color: $primary;
+//  font-size: large;
+//  font-weight: bold;
+//}

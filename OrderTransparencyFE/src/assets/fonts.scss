@@ -1,0 +1,30 @@
+$telegrotesknextregular-woff-font-path: "assets/fonts/telegrotesknext-regular.woff";
+$telegrotesknextregular-woff2-font-path: "assets/fonts/telegrotesknext-regular.woff2";
+$font-family-brand: 'telegrotesregular';
+$telegrotesknextthin-woff-font-path: "assets/fonts/telegrotesknext-thin.woff";
+$telegrotesknextthin-woff2-font-path: "assets/fonts/telegrotesknext-thin.woff2";
+$telegrotesknextbold-woff-font-path: "assets/fonts/telegrotesknext-bold.woff";
+$telegrotesknextbold-woff2-font-path: "assets/fonts/telegrotesknext-bold.woff2";
+
+@font-face {
+  font-family: 'telegrotesknextregular';
+  src: url($telegrotesknextregular-woff2-font-path) format('woff2'),
+  url($telegrotesknextregular-woff-font-path) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'telegrotesknextregular';
+  src: url($telegrotesknextbold-woff2-font-path) format('woff2'),
+  url($telegrotesknextbold-woff-font-path) format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'telegrotesknextthin';
+  src: url($telegrotesknextthin-woff2-font-path) format('woff2'),
+  url($telegrotesknextthin-woff-font-path) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,61 @@
+@import '../../../../../node_modules/bootstrap/scss/functions';
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/mixins/border-radius";
+@import "../../../../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../../../../assets/custom_variables"; //<- needs to be imported, otherwise above imports override $primary
+
+mat-select {
+  outline: none;
+  box-shadow: none !important;
+  padding-top: 0.6em;
+}
+
+input:focus, mat-select:focus {
+  outline: none;
+  border: 1px solid $telekom-black;
+}
+
+button:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+
+div > input, mat-select, button {
+  min-height: 48px;
+}
+
+div > span {
+  color: $telekom-grau-1;
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(md) {
+  input {
+    outline: none;
+    box-shadow: none !important;
+    //border-left: none;
+    border-right: none;
+    @include border-radius(0px);
+  }
+  button {
+    border-left: none;
+    @include border-left-radius(0px);
+  }
+  mat-select {
+    border-right: none;
+    @include border-right-radius(0px);
+  }
+  mat-select:focus {
+    border-right: 1px solid $telekom-black;
+    @include border-right-radius(0px);
+    @include border-left-radius(0px);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  h2 {
+    font-size: 2rem;
+  }
+
+}
+

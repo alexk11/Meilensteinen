@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row justify-content-center mb-md-5 mb-sm-3">
+    <h2>Auftragssuche</h2>
+  </div>
+  <form [formGroup]="orderSearchForm" (submit)="onSubmit()">
+    <div id="row" class="row justify-content-center">
+      <div class="col-md-3 col-sm-12 p-0">
+        <mat-select class="form-control select-sm-border" id="dropSearchFor"
+                #mySelect
+                (selectionChange)='onOptionsChanged(mySelect.value)' [(value)]="searchType">
+          <mat-option value="ORDER_ID">Auftragsnummer</mat-option>
+          <mat-option value="ORDER_ITEM_NO">Auftragspositionsnummer</mat-option>
+          <mat-option value="CUSTOMER_ID">Kundennummer</mat-option>
+        </mat-select>
+      </div>
+
+      <div *ngIf="searchType==='ORDER_ID'" class="col-md-4 col-sm-12 p-0 mt-2 mt-md-0">
+        <input formControlName="inOrderId" id="inOrderId"
+               class="form-control" type="text"/>
+        <span>z.B. 1-12345678, KKV12345678, KKU12345678</span>
+      </div>
+      <div *ngIf="searchType==='ORDER_ITEM_NO'" class="col-md-4 col-sm-12 p-0 mt-2 mt-md-0">
+        <input formControlName="inOrderPosId" id="inOrderPosId"
+               class="form-control" type="text"/>
+        <span>z.B. 1-12345678-000001, KKV12345678-000001 KKU12345678-000001</span>
+      </div>
+      <div *ngIf="searchType==='CUSTOMER_ID'" class="col-md-4 col-sm-12 p-0 mt-2 mt-md-0">
+        <input formControlName="inCustomerId" id="inCustomerId"
+               class="form-control" size="10" maxlength="10" type="text"/>
+        <span>z.B. 1234567890</span>
+      </div>
+      <div class="col-md-2 col-sm-12 p-0 mt-2 mt-md-0 ">
+        <button class="btn btn-primary btn-block" type="submit" [disabled]="!orderSearchForm.valid">Suchen</button>
+      </div>
+    </div>
+  </form>
+</div>

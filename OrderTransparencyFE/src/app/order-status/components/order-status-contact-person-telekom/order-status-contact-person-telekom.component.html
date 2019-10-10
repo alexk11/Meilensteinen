@@ -1,0 +1,56 @@
+<div class="mat-elevation-z8">
+  <mat-table [dataSource]="dataSource">
+    <!-- role Column -->
+    <ng-container matColumnDef="role">
+      <mat-header-cell *matHeaderCellDef style="padding-right: 1em"> Ansprechpartner</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="Ansprechpartner"
+                style="padding-right: 1em"> {{element.role}} </mat-cell>
+    </ng-container>
+
+    <!-- salutation Column -->
+    <ng-container matColumnDef="salutation">
+      <mat-header-cell *matHeaderCellDef> Anrede</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="Anrede"> {{element.salutation}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="Name"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <!-- Telefon Column -->
+    <ng-container matColumnDef="phone">
+      <mat-header-cell *matHeaderCellDef> Telefon</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="Telefon">
+        <a href="tel:{{element.phone}}">
+          {{element.phone}}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Mobil Column -->
+    <ng-container matColumnDef="mobile">
+      <mat-header-cell *matHeaderCellDef> Mobil</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="Mobil">
+        <a href="tel:{{element.mobile}}">
+          {{element.mobile}}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <!-- E-Mail Column -->
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef style="padding-right: 2.25em"> E-Mail</mat-header-cell>
+      <mat-cell *matCellDef="let element" data-label="E-Mail" style="padding-right: 2.25em">
+        <a
+          href="mailto:{{element.email}}?subject=Nachfrage%20bezüglich%20Auftragspositionsnummer%20{{this.orderItemNo}}%20von%20Kunde%20{{this.customerName}}%20(Kd.-Nr.:{{this.customerNo}})">
+          {{element.email}}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

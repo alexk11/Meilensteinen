@@ -1,0 +1,50 @@
+[
+  {
+    "customerId": 1234567890,
+    "name": "Max Mustermann GmbH"
+  },
+  {
+    "customerId": 987654321,
+    "name": "Max Müller GmbH"
+  },
+  {
+    "customerId": 654987321,
+    "name": "Fritz GmbH"
+  },
+  {
+    "customerId": 321654987,
+    "name": "Beste GmbH"
+  },
+  {
+    "customerId": 111111111,
+    "name": "Läuft Bei Uns AG"
+  },
+  {
+    "customerId": 1234567899,
+    "name": "Wir sind bald pleite GmbH"
+  },
+  {
+    "customerId": 1,
+    "name": "Max Mustermann 2 GmbH"
+  },
+  {
+    "customerId": 2,
+    "name": "Max Müller 2 GmbH"
+  },
+  {
+    "customerId": 3,
+    "name": "Fritz 2 GmbH"
+  },
+  {
+    "customerId": 4,
+    "name": "Beste 2 GmbH"
+  },
+  {
+    "customerId": 5,
+    "name": "Läuft Bei Uns 2 AG"
+  },
+  {
+    "customerId": 6,
+    "name": "Wir sind bald pleite 2 GmbH"
+  }
+]

@@ -1,0 +1,236 @@
+{
+  "customer": {
+    "customerId": 1234567890,
+    "name": "Max Mustermann GmbH"
+  },
+  "orderItem": {
+    "orderItemId": 1,
+    "orderItemNo": "1-12345678-005001",
+    "address": "63450 Hanau, Nussallee 10",
+    "product": {
+      "productId": 1,
+      "productName": "DeutschlandLAN Connect IP 100 Erstanbindung"
+    },
+    "contactPersonsCustomer": [
+      {
+        "salutation": "Divers",
+        "name": "Sam",
+        "phone": "+491234",
+        "mobile": "+49173123123",
+        "email": "Sam@t-online.de",
+        "role": "Kaufmännischer Ansprechpartner Gesamtauftrag"
+      },
+      {
+        "salutation": "Herr",
+        "name": "Hans Wurst",
+        "phone": "+4912346",
+        "mobile": "+49173123123",
+        "email": "Hans.wurst@t-online.de",
+        "role": "Technischer Ansprechpartner Gesamtauftrag"
+      },
+      {
+        "salutation": "Herr",
+        "name": "Ali Baba",
+        "phone": "+491234",
+        "mobile": "+49173123123",
+        "email": "ali.baba@t-online.de",
+        "role": "Ansprechpartner vor Ort/Hausmeister"
+      }
+    ],
+    "contactPersonsTelekom": [
+      {
+        "salutation": "Frau",
+        "name": "Petra Gurke",
+        "phone": "+491234",
+        "mobile": "+49173123123",
+        "email": "Petra.Gurke@telekom.de",
+        "role": "Ansprechpartner Vertrieb"
+      },
+      {
+        "salutation": "Frau",
+        "name": "Gundula Grün",
+        "phone": "+491234",
+        "mobile": "+49173123123",
+        "email": "Gundula.gruen@telekom.de",
+        "role": "Zentraler Auftragskoordinator"
+      },
+      {
+        "salutation": "Divers",
+        "name": "Sunny Stromberg",
+        "phone": "+491234",
+        "mobile": "+49173123123",
+        "email": "sunny.stromberg@telekom.de",
+        "role": "Koordinator Access"
+      }
+    ],
+    "additionalInfo": [
+      {
+        "label": "Leitungsbezeichnung",
+        "value": "99P/0-12345-12345",
+        "hint": ""
+      },
+      {
+        "label": "IP-Adressbereiche",
+        "value": "IPv6 1234:CD:1234:0:0:0:0:0/12 PAT IPv4 1234:CD:1234:0:0:0:0:0/12 PAT IPv4 1234:CD:1234:0:0:0:0:0/12 PAT",
+        "hint": ""
+      },
+      {
+        "label": "Subscription-ID",
+        "value": "123456789012345",
+        "hint": ""
+      },
+      {
+        "label": "Anschluss-ID",
+        "value": "AN-1234567",
+        "hint": ""
+      },
+      {
+        "label": "Line-ID",
+        "value": "DEU.DTAG.123UY",
+        "hint": ""
+      },
+      {
+        "label": "Warenschleuse an die das Remote Device geliefert wurde",
+        "value": "33102 Paderborn, Rathenaustraße 28",
+        "hint": ""
+      },
+      {
+        "label": "Warenschleuse an die das SFP-Modul geliefert wurde",
+        "value": "33102 Paderborn, Rathenaustraße 28",
+        "hint": ""
+      },
+      {
+        "label": "Projektkenner",
+        "value": "Ralf123456",
+        "hint": "Rollout Stufe 1"
+      },
+      {
+        "label": "Kopplungskenner",
+        "value": "Falko4711",
+        "hint": "TK-Anlage im Netz"
+      },
+      {
+        "label": "SIN-Nummer",
+        "value": "Steffen2000",
+        "hint": "Kein Kommentar"
+      }
+    ],
+    "documents": [
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Massprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Strukturiertskundeninterview",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auftragseingangsbestätigung",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.docx",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/doc.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokoll",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      },
+      {
+        "link": "../../../../assets/docs/Auskundungprotokoll.pdf",
+        "title": "Auskundungprotokol",
+        "imageUrl": "../../../../assets/images/pdf.png"
+      }
+    ]
+  }
+}

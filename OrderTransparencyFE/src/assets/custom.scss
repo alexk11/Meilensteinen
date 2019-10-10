@@ -1,0 +1,68 @@
+//Custom theme for bootstrap, using corporate colors and font.
+//if you are aware what you are doing, feel free to improve this file
+//created by: Bekir Üstün 09/2019
+@import "fonts";
+@import "custom_variables";
+
+/*! Import Bootstrap 4 variables */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// set the bootstrap colors
+$theme-colors: (
+  secondary: $secondary,
+  success: $success,
+);
+
+$h1-font-size: $font-size-base * 3.3;
+$h2-font-size: $font-size-base * 2.6;
+$h3-font-size: $font-size-base * 2;
+
+@import "~bootstrap";
+body {
+  font-family: telegrotesknextregular, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: $telekom-black;
+}
+
+a {
+  color: #00739F;
+}
+
+.tkom-black {
+  color: $telekom-black;
+}
+
+h1, h2, h3 {
+  font-family: telegrotesknextthin;
+}
+
+.mat-row:nth-child(even) {
+  background-color: $telekom-grau-4;
+}
+
+button:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+
+table {
+  width: 100%;
+}
+
+.primary {
+  color: $primary;
+}
+
+.mat-tab-label {
+  font-size: 1.125rem;
+}
+
+.mat-tab-header {
+  margin-bottom: .75em;
+}
+
+th.mat-header-cell {
+  color: $primary;
+  font-size: large;
+  font-weight: bold;
+}
